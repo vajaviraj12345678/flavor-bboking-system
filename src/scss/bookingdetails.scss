@@ -1,0 +1,223 @@
+.circle-wrap {
+  width: 66px;
+  height: 66px;
+  background: #F7F7F7;
+  border-radius: 50%;
+  border: 1px solid #F7F7F7;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 66px, 66px, 33px);
+}
+
+.circle-wrap .inside-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #F7F7F7;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 4px;
+  margin-left: 4px;
+  color: black;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #21B9C8;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+.headerbox
+{
+    // position: fixed;
+    // top: 0px;
+    // width: 100%;
+    height: 60px;
+    border: 10px solid white; 
+    background-color: white; 
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.footerbox
+{
+    border: 10px solid #002039; 
+      background-color: #002039; 
+      box-shadow: 0 2px 5px 0 #002039;
+      bottom: 0%;
+    //   position: fixed;
+      width: 100%;
+      height: 4em;
+      color: white;
+}
+// .imghover
+// {
+//   box-shadow: 2px 4px 5px 0 grey, 2px 5px 3px -3px grey, 2px 5px 10px 0 grey;
+// }
+.sessionsize
+{
+  color:#21B9C8; 
+  border-color: #E0FCFF; 
+  background-color: #E0FCFF; 
+  border-radius: 4px; 
+  font-size: 20px;
+}
+.language
+{
+  font-style: italic;  
+  color:  #6C6C6C; 
+}
+.teacherimg
+{
+    width: 40px;
+    height: 40px;
+}
+.fa-clock{
+  color: #0dcaf0;
+}
+.fa-calendar-days{
+  color: #0dcaf0;
+}
+.fa-location-dot
+{
+  color: #0dcaf0;
+}
+.ptag
+{
+  font-size: 14px;
+  width: 50%;
+  background: linear-gradient(180deg, #000000 0%, #FFFFFF 100%), #333333;
+  // -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.showmore
+{
+  text-decoration: none; 
+  color: #21B9C8;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+.sidecontainer
+{
+  position: fixed; 
+  margin-left: 65%;
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); 
+  border-radius: 8px; box-sizing: border-box;
+  border: 1px solid #E4E9F0;
+}
+.h6class
+{
+  color:#21B9C8;
+  box-shadow: #21B9C8; 
+  color:#21B9C8;
+}
+.dark-blue
+{
+  color:#002039;
+}
+.cardwidth
+{
+  width: 15rem;
+}
+// .line-1 {
+//   height: 1px;
+//   background: black;
+// }
+.main-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+p{
+  text-align: justify;
+  text-justify: inter-word;
+}
+@media only screen and (max-width: 600px) {
+  .flex-screen{
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+  }
+  .imagesize
+  {
+    width:300px !important;
+    margin-left: 0 !important;
+  }
+  .textcenter
+  {
+    margin-left: 50px;
+  }
+  .sidecontainer
+  {
+    position: relative !important;
+    width:300px !important;
+    margin-left: -10px !important;
+  }
+  .main-div
+  {
+    position: absolute;
+  top: 0 !important;
+  left: 0 !important;
+  // right: 0 !important;
+  }
+}
+
+// .card
+// {
+//   transition: width 2s height 4s;
+// }
+// .card:hover {
+//   box-shadow: 2px 4px 5px 0 grey, 2px 5px 3px -3px grey, 2px 5px 10px 0 grey;
+//   transition: width 2s height 4s;
+//   width: 16em;
+// }
+.fontsize
+{
+  font-size: 12px;
+}
+.fontsize14
+{
+  font-size: 14px;
+}
+.fontawsomesize
+{
+  width: 20px;
+  height: 20px;
+}
+$info: #D1D1D1;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$font-family-sans-serif:     Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+@import "/node_modules/bootstrap/scss/bootstrap";
+
+  

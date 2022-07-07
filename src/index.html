@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <div class="main-div">
+        <header>
+            <nav class="navbar bg-light" id="navbar-img">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/content/flavor.png" alt="flavor logo" width="150" height="25" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+            </nav>
+            <section>
+                <div class="container-fl">
+                    <img src="./images/content/header-img.png" class="header-img" alt="header image">
+                    <div class="centered h1"><strong> Course Catalog </strong></div>
+                    <div class="h5 centered mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro ullam obcaecati.</div>
+                </div>
+            </section>
+        </header>
+
+        <div class="d-flex m-4 flex-res">
+            <section class="ps-3 pt-2">
+                <div class="">
+                    <h3 class="pt-3"><strong>Subject</strong></h3>
+                    <h5 class="pt-3"><a href="#"> Language (5) </a></h5>
+                    <h5 class="pt-3"><a href="#"> Science (2) </a></h5>
+                    <h5 class="pt-3"><a href="#"> Social (35) </a></h5>
+                    <h5 class="pt-3"><a href="#"> Biology (2) </a></h5>
+                </div>
+
+                <div class="mt-4">
+                    <h3 class="pt-4"><strong>Price</strong></h3>
+                    
+                    <!-- <input class="p-2" type="range" id="price" name="price" min="0" max="50"> -->
+                    <div class="middle mt-4">
+                        <div class="multi-range-slider">
+                            <input type="range" id="input-left" min="0" max="100" value="25" />
+                            <input type="range" id="input-right" min="0" max="100" value="75" />
+                            
+                            <div class="slider">
+                                <div class="track"></div>
+                                <div class="range"></div>
+                                <div class="thumb left"></div>
+                                <div class="thumb right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="form-range h6 pt-3" for="price">Price: $0 - $120</label>
+
+                    <!-- <input type="range" multiple value="0,100" /> -->
+
+                    <!-- <form class="multi-range-field my-5 pb-5">
+                        <input id="multi6" class="multi-range" type="range" />
+                    </form> -->
+                </div>
+
+                <div class="mt-4" style="max-width: 245px;">
+                    <h3 class="pt-4"><strong>Schedule</strong></h3>
+
+                    <div class="date mt-4 pt-2 col-md-8">
+                        <label for="date"><h5> Date Range </h5></label>
+                        <input type="date" class="form-control" name="daterange" id="date" name="date" />
+                    </div>
+                    <div class="range d-flex flex-column mt-4 pt-2">
+                        <label for="time"><h5> Time Range </h5></label>
+                        <div>
+                            <input type="time" class="col-md-4 border p-1 ps-2" value="09:00" name="time" id="time-1">
+                            <span>&nbsp; - &nbsp;</span>
+                            <input type="time" class="col-md-4 border p-1 ps-2" value="09:00" name="time" id="time-2">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column mt-4 pt-2">
+                        <label><h5> Select Day </h5></label>
+                        <div class="col-md-12">
+                            <input type="button" style="background-color: white;" onclick="buttonFunction(this)" class="btn border me-2 mb-2" value="Mo">
+                            <input type="button" style="background-color: white;" onclick="buttonFunction(this)" class="btn border me-2 mb-2" value="Tu">
+                            <input type="button" style="background-color: white;" onclick="buttonFunction(this)" class="btn border me-2 mb-2" value="We">
+                            <input type="button" style="background-color: white;" onclick="buttonFunction(this)" class="btn border me-2 mb-2" value="Th">
+                            <input type="button" style="background-color: white;" onclick="buttonFunction(this)" class="btn border me-2 mb-2" value="Fr">
+                            <input type="button" style="background-color: white;" onclick="buttonFunction(this)" class="btn border me-2 mb-2" value="Sa">
+                            <input type="button" style="background-color: white;" onclick="buttonFunction(this)" class="btn border me-2 mb-2" value="Su">
+                        </div>
+                    </div>
+                </div>
+                
+                    <!-- <div class="col-md-6">
+                        <div class="form-group">
+                                <label for="date"> Date Range </label>
+                            <div class="input-icon input-icon-right">
+                                <input type="date" class="form-control" id="date" name="date" />
+                                <input type="time" name="" id="">
+                                <input type="button" class="btn" style="border: 1px solid grey;" value="Mo">
+                            </div>
+                        </div>                    
+                    </div> -->
+            </section>
+
+            
+            <section class="box-1 pt-3 ms-3 ps-3">
+                <div class="d-flex flex-res">
+                    <div class="card ms-4" style="width: 15.8rem;">
+                        <img src="./images/content/img1.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong> Chinese 101: Elementary</strong></h5>
+                            <p class="fst-italic opacity-50">Language</p>
+                            <div><i class="fa-regular fa-clock pe-1"></i> 12:00 - 1:30 </div>
+                            <div><i class="fa-regular fa-calendar-days pe-1"></i> 12 Jan 2021 - 12 Jun 2021 </div>
+                            <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="text-info"><strong>$12/Session</strong></h5>
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                    <div class="mask full">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="inside-circle">83%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card ms-4" style="width: 15.8rem;">
+                        <img src="./images/content/img2.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong> Chinese 101: Elementary</strong></h5>
+                            <p class="fst-italic opacity-50">Language</p>
+                            <div><i class="fa-regular fa-clock pe-1"></i> 12:00 - 1:30 </div>
+                            <div><i class="fa-regular fa-calendar-days pe-1"></i> 12 Jan 2021 - 12 Jun 2021 </div>
+                            <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="text-info"><strong>$12/Session</strong></h5>
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                    <div class="mask full">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="inside-circle">83%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card ms-4" style="width: 15.8rem;">
+                        <img src="./images/content/img3.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong> Chinese 101: Elementary</strong></h5>
+                            <p class="fst-italic opacity-50">Language</p>
+                            <div><i class="fa-regular fa-clock pe-1"></i> 12:00 - 1:30 </div>
+                            <div><i class="fa-regular fa-calendar-days pe-1"></i> 12 Jan 2021 - 12 Jun 2021 </div>
+                            <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="text-info"><strong>$12/Session</strong></h5>
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                    <div class="mask full">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="inside-circle">83%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card ms-4" style="width: 15.8rem;">
+                        <img src="./images/content/img4.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong> Chinese 101: Elementary</strong></h5>
+                            <p class="fst-italic opacity-50">Language</p>
+                            <div><i class="fa-regular fa-clock pe-1"></i> 12:00 - 1:30 </div>
+                            <div><i class="fa-regular fa-calendar-days pe-1"></i> 12 Jan 2021 - 12 Jun 2021 </div>
+                            <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="text-info"><strong>$12/Session</strong></h5>
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                    <div class="mask full">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="inside-circle">83%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex mt-5 flex-res">
+                    <div class="card ms-4" style="width: 15.8rem;">
+                        <img src="./images/content/img1.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong> Chinese 101: Elementary</strong></h5>
+                            <p class="fst-italic opacity-50">Language</p>
+                            <div><i class="fa-regular fa-clock pe-1"></i> 12:00 - 1:30 </div>
+                            <div><i class="fa-regular fa-calendar-days pe-1"></i> 12 Jan 2021 - 12 Jun 2021 </div>
+                            <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="text-info"><strong>$12/Session</strong></h5>
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                    <div class="mask full">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="inside-circle">83%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card ms-4" style="width: 15.8rem;">
+                        <img src="./images/content/img2.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong> Chinese 101: Elementary</strong></h5>
+                            <p class="fst-italic opacity-50">Language</p>
+                            <div><i class="fa-regular fa-clock pe-1"></i> 12:00 - 1:30 </div>
+                            <div><i class="fa-regular fa-calendar-days pe-1"></i> 12 Jan 2021 - 12 Jun 2021 </div>
+                            <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="text-info"><strong>$12/Session</strong></h5>
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                    <div class="mask full">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                    </div>
+                                    <div class="inside-circle">83%</div>
+                                </div>
+                                <div class="fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card ms-4" style="width: 15.8rem;">
+                        <img src="./images/content/img3.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong> Chinese 101: Elementary</strong></h5>
+                            <p class="fst-italic opacity-50">Language</p>
+                            <div><i class="fa-regular fa-clock pe-1"></i> 12:00 - 1:30 </div>
+                            <div><i class="fa-regular fa-calendar-days pe-1"></i> 12 Jan 2021 - 12 Jun 2021 </div>
+                            <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="text-info"><strong>$12/Session</strong></h5>
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                    <div class="mask full">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                    </div>
+                                    <div class="inside-circle">83%</div>
+                                </div>
+                                <div class="fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card ms-4" style="width: 15.8rem;">
+                        <img src="./images/content/img4.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong> Chinese 101: Elementary</strong></h5>
+                            <p class="fst-italic opacity-50">Language</p>
+                            <div><i class="fa-regular fa-clock pe-1"></i> 12:00 - 1:30 </div>
+                            <div><i class="fa-regular fa-calendar-days pe-1"></i> 12 Jan 2021 - 12 Jun 2021 </div>
+                            <p class="card-text mt-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="text-info"><strong>$12/Session</strong></h5>
+                                <div class="circle-wrap">
+                                    <div class="circle">
+                                    <div class="mask full">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="mask half">
+                                        <div class="fill"></div>
+                                    </div>
+                                    <div class="inside-circle">83%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer text-white text-end p-2">
+                © Copyright FLAVOR 2021. All Rights Reserved.
+            </div>
+        </footer>
+    </div>   
+</body>
+</html>
+
+<script>
+    function buttonFunction(el) {
+        if(el.style.backgroundColor == "white"){
+            el.style.backgroundColor = "cyan";
+            el.style.color = "white";
+        }
+        else if(el.style.backgroundColor == "cyan"){
+            el.style.backgroundColor = "white";
+            el.style.color = "black";
+        }
+    }
+</script>
